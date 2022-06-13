@@ -37,13 +37,14 @@ const getChrisRepo = () => {
 
 const getSelfApi = () => {
 	const getRepo =
-		"https://api.github.com/users/Yahplee/repos?per_page=6&sort=updated";
+		"https://api.github.com/users/yahplee/repos?per_page=6&sort=updated";
 
 	fetch(getRepo)
 		.then(function (response) {
 			return response.json();
 		})
 		.then((data) => {
+			console.log(data);
 			renderRepo(data);
 		});
 };
