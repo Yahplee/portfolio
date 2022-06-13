@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="smooth-scroll">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/styles1.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Andrew P. Lee Portfolio</title>
+	</head>
+	<body class="bg-white dark:bg-neutral-800 dark:text-neutral-400">
+		<header class="flex row place-content-between m-2">
+			<a class="ml-2 underline decoration-solid" href="">Yaplee</a>
+			<nav class="flex row place-content-around">
+				<button id="moon" class="-mt-0.5 mr-1">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-5 w-5"
+						viewBox="0 0 20 20"
+						fill="currentColor"
+					>
+						<path
+							d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+						/>
+					</svg>
+				</button>
+				<button id="sun" class="hide -mt-0.5 mr-1">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-5 w-5"
+						viewBox="0 0 20 20"
+						fill="currentColor"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+							clip-rule="evenodd"
+						/>
+					</svg>
+				</button>
+				<ul class="mr-2">
+					<a class="underline decoration-solid" href="#about">About Me</a>
+					<a class="underline decoration-solid" href="#projects" class="ml-1"
+						>Projects</a
+					>
+					<a class="underline decoration-solid" href="#contact" class="ml-1"
+						>Contact</a
+					>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="flex-col-span container mx-auto">
+			<!-- <div>
+				<h1>Yaplee's Portfolio</h1>
+			</div> -->
+			<section id="about" class="about flow-root">
+				<h2 class="text-center my-4 text-2xl underline decoration-double">
+					About Me
+				</h2>
+				<img
+					class="place-content-center"
+					src="./assets/images/holdup.gif"
+					alt="Picture of me smiling for a photo"
+				/>
+				<p class="place-items-center">
+					Hello! I'm Andrew Lee. I love learning, and I am currently enrolled in
+					a coding bootcamp. I am passionate about games, sports (tennis and
+					golf in particular), and reading. Aside from those, I am currently
+					working at a dental implant manufacturing company.
+				</p>
+			</section>
+
+			<section id="projects" class="projects flex-col flow-root">
+				<h2 class="text-center my-4 text-2xl underline decoration-double">
+					Projects
+				</h2>
+				<div id="collab" class="container grid grid-cols-2 gap-3 my-2"></div>
+				<div id="repoContainer" class="container grid grid-cols-3 gap-3"></div>
+			</section>
+
+			<section id="contacts" class="contacts flex-col flow-root">
+				<h2 class="text-center my-4 text-2xl underline decoration-double">
+					Contacts
+				</h2>
+			</section>
+		</main>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>
