@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth text-2xl lg:text-xl">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -63,14 +63,14 @@
 				<h2 class="text-center my-4 text-2xl underline decoration-double">
 					About Me
 				</h2>
-				<div class="row">
+				<div class="flex flex-col lg:flex-row justify-around">
 					<img
-						class="place-content-center"
+						class="scale-75"
 						src="./assets/images/holdup.gif"
 						alt="Picture of me smiling for a photo"
 					/>
 					<img
-						class="place-content-center"
+						class="scale-75"
 						src="./assets/images/coding.gif"
 						alt="coding :DDDD"
 					/>
@@ -83,18 +83,49 @@
 				</p>
 			</section>
 
-			<section id="projects" class="projects flex-col flow-root">
+			<section id="projects" class="projects flex-col flow-root mt-4">
 				<h2 class="text-center my-4 text-2xl underline decoration-double">
 					Projects
 				</h2>
-				<div id="collab" class="container grid grid-cols-2 gap-3 my-2"></div>
-				<div id="repoContainer" class="container grid grid-cols-3 gap-3"></div>
+				<p class="text-center mb-2">
+					Please feel free to check out my projects from GitHub!
+				</p>
+				<div
+					id="collab"
+					class="container grid lg:grid-cols-2 gap-3 my-2 md:grid-cols-1"
+				></div>
+				<div
+					id="repoContainer"
+					class="container grid sm:grid-cols-2 lg:grid-cols-3 gap-3"
+				></div>
 			</section>
 
-			<section id="contact" class="contacts flex-col flow-root">
+			<section id="contact" class="contacts flex-col flow-root mt-4">
 				<h2 class="text-center my-4 text-2xl underline decoration-double">
 					Contacts
 				</h2>
+				<p class="text-center">
+					Feel free to reach out to me if you want to ask me questions, or just
+					want to connect.
+				</p>
+				<div class="flex justify-center hover:underlines">
+					<a type="email" href="mailto:alee68@fordham.edu"
+						>Email: alee68@fordham.edu</a
+					>
+				</div>
+				<div class="flex justify-center hover:underline">
+					<a type="tel" href="#">Phone: 111.111.1111</a>
+				</div>
+				<div class="flex justify-center mt-2 mb-4 dark:invert">
+					<a href="https://github.com/Yahplee">
+						<img
+							src="./assets/images/GitHub-Mark-32px.png"
+							alt="github icon"
+							rel="noopener noreferrer"
+							target="_blank"
+						/>
+					</a>
+				</div>
 			</section>
 		</main>
 		<script src="https://cdn.tailwindcss.com"></script>
