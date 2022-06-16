@@ -11,14 +11,14 @@ const sunBtn = document.getElementById("sun");
 moonBtn.addEventListener("click", (event) => {
 	event.preventDefault();
 
-	htmlEl.setAttribute("class", "scroll-smooth dark text-2xl lg:text-xl");
+	htmlEl.setAttribute("class", "scroll-smooth dark text-xl");
 	moonBtn.setAttribute("class", "hide");
 	sunBtn.setAttribute("class", "-mt-0.5 mr-1");
 });
 sunBtn.addEventListener("click", (event) => {
 	event.preventDefault();
 
-	htmlEl.setAttribute("class", "scroll-smooth text-2xl lg:text-xl");
+	htmlEl.setAttribute("class", "scroll-smooth text-xl");
 	moonBtn.setAttribute("class", "-mt-0.5 mr-1");
 	sunBtn.setAttribute("class", "hide");
 });
